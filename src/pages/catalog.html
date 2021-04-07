@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalog</title>
+    <script defer src="bundle.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark justify-content-left">
+
+    <ul class="nav nav-pills">
+        <li>
+            <a class="navbar-brand" href="index.html">Configurator PC</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="catalog.html">Catalog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Choose you WAY!</a>
+        </li>
+    </ul>
+
+</nav>
+
+<div class="container d-flex justify-content-center mt-50 mb-50">
+    <div class="row justify-content-center">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" value="cpu" checked>
+                Cpu
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="motherboard">
+                Motherboard
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="gpu">
+                Gpu
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="ram">
+                Ram
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="rom">
+                Rom
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="psu">
+                Psu
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="case">
+                Case
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="monitor">
+                Monitor
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="keyboard">
+                Keyboard
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="options" value="mouse">
+                Mouse
+            </label>
+        </div>
+
+        <div class="col-md-10" id="products"> </div>
+
+    </div>
+</div>
+</body>
+</html>

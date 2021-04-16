@@ -1,4 +1,3 @@
-// Generated using webpack-cli http://github.com/webpack-cli
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -13,7 +12,7 @@ module.exports = {
     },
     devServer: {
         open: true,
-        host: 'localhost',
+        host: 'localhost'
     },
     module: {
         rules: [
@@ -40,10 +39,7 @@ module.exports = {
                     }
                 ],
                 exclude: path.resolve(__dirname, 'src/pages/index.html')
-            },
-
-            // Add your rules for custom modules here
-            // Learn more about loaders from https://webpack.js.org/loaders/
+            }
         ],
     },
     plugins: [
@@ -51,8 +47,5 @@ module.exports = {
             filename: "index.html",
             template: './src/pages/index.html',
         })
-
-        // Add your plugins here
-        // Learn more obout plugins from https://webpack.js.org/configuration/plugins/
-    ],
+    ]
 };

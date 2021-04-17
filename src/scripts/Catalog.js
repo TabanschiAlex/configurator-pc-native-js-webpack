@@ -3,9 +3,12 @@ class Catalog {
         this.selectedCategory = 'cpu';
         this.requestURL = 'http://localhost:3000/api/cpu';
         this.json = [];
-        this.products = document.getElementById('products');
-        this.init();
-        this.switchCategory();
+        this.products = document.getElementById('products') || false;
+
+        if (this.products) {
+            this.init();
+            this.switchCategory();
+        }
     }
 
     async init() {

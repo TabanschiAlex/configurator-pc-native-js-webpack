@@ -12,7 +12,7 @@ module.exports = {
     },
     devServer: {
         open: true,
-        host: 'localhost'
+        host: 'localhost',
     },
     module: {
         rules: [

@@ -1,5 +1,8 @@
-class Catalog {
+const Request = require('./Request');
+
+class Catalog extends Request {
     constructor() {
+        super();
         this.selectedCategory = 'cpu';
         this.requestURL = 'http://localhost:3000/cpu';
         this.json = [];
@@ -12,14 +15,9 @@ class Catalog {
     }
 
     async init() {
-        await this.fetchData(this.requestURL).then(_ => _);
+        await this.getData(this.requestURL);
         await this.showProducts();
         this.add();
-    }
-
-    async fetchData(request, type = 'GET') {
-        const response = await fetch(request, {method: type});
-        this.json = await response.json();
     }
 
     getRequest() {
@@ -34,6 +32,7 @@ class Catalog {
                 </div>
             `;
         }
+
         this.products.innerHTML = '';
 
         for (const product of this.json) {
@@ -71,7 +70,7 @@ class Catalog {
                 this.selectedCategory = category.value;
                 this.requestURL = this.getRequest();
 
-                await this.fetchData(this.requestURL).then(_ => _);
+                await this.getData(this.requestURL);
                 await this.showProducts();
                 await this.add();
             });

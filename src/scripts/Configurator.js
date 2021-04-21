@@ -1,9 +1,14 @@
-class Configurator {
-    constructor() {
+const Request = require('./Request');
 
+class Configurator extends Request {
+    constructor() {
+        super();
+        if (document.getElementById('accordionExample')) {
+            this.init();
+        }
     }
 
-    init() {
+    async init() {
 
     }
 
@@ -17,4 +22,4 @@ class Configurator {
 
 }
 
-module.exports = new Configurator;
+module.exports = new Configurator();

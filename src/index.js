@@ -4,9 +4,11 @@ import '../src/styles/main.css';
 
 // Scripts
 import 'bootstrap/dist/js/bootstrap.min';
-import './scripts/Configurator';
-import './scripts/Catalog';
 import './scripts/Auth';
+import './scripts/Catalog';
+import './scripts/Configurator';
+
+
 
 // Pages
 import './pages/catalog.html';

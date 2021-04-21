@@ -1,7 +1,7 @@
 class Auth {
     constructor() {
         this.validateToken();
-        console.log(localStorage.getItem('isLogIn'))
+        console.log(localStorage.getItem('isLogIn'));
 
         this.navAccount = document.getElementById('nav-account');
 
@@ -91,6 +91,7 @@ class Auth {
             const data = { name, password };
 
             await this.fetchData('http://localhost:3000/register', data);
+            console.log("New user successful registered");
             return true;
         }
 
@@ -123,6 +124,7 @@ class Auth {
             });
 
             const json = await response.json();
+            console.log(localStorage.getItem('token'))
             localStorage.setItem('isLogIn', json);
 
             return json;

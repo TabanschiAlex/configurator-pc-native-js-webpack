@@ -1,7 +1,7 @@
 class Catalog {
     constructor() {
         this.selectedCategory = 'cpu';
-        this.requestURL = 'http://localhost:3000/api/cpu';
+        this.requestURL = 'http://localhost:3000/cpu';
         this.json = [];
         this.products = document.getElementById('products') || false;
 
@@ -23,7 +23,7 @@ class Catalog {
     }
 
     getRequest() {
-        return 'http://localhost:3000/api/' + this.selectedCategory;
+        return 'http://localhost:3000/' + this.selectedCategory;
     }
 
     showProducts() {

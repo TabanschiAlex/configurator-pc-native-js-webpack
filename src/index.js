@@ -9,7 +9,6 @@ import './scripts/Catalog';
 import './scripts/Configurator';
 
 
-
 // Pages
 import './pages/catalog.html';
 import './pages/login.html';

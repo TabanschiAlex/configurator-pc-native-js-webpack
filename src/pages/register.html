@@ -1,53 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script defer src="bundle.js"></script>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script defer src="bundle.js"></script>
 </head>
 <body>
 
 <nav class="navbar navbar-dark bg-dark justify-content-left">
 
-    <ul class="nav nav-pills">
-        <li>
-            <a class="navbar-brand" href="index.html">Configurator PC</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="catalog.html">Catalog</a>
-        </li>
-    </ul>
+  <ul class="nav nav-pills">
+    <li>
+      <a class="navbar-brand" href="index.html">Configurator PC</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="catalog.html">Catalog</a>
+    </li>
+  </ul>
 
-    <ul class="nav nav-pills" id="nav-account">
-        <li>
-            <a class="nav-link" href="login.html">Log in</a>
-        </li>
-        <li>
-            <a class="nav-link" href="catalog.html">Register</a>
-        </li>
-    </ul>
+  <ul class="nav nav-pills" id="nav-account">
+    <li>
+      <a class="nav-link" href="login.html">Log in</a>
+    </li>
+    <li>
+      <a class="nav-link" href="catalog.html">Register</a>
+    </li>
+  </ul>
 
 </nav>
 
 <form class="form-signin" style="text-align: center">
-    <h1 class="h3 mb-3 font-weight-normal">PC Configurator</h1>
-    <h2 class="h3 mb-3 font-weight-normal">Registration</h2>
-    <label for="inputName" class="sr-only">Username</label>
-    <input type="text" id="inputName" class="form-control" placeholder="Username" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <label for="inputPasswordRepeat" class="sr-only">Password</label>
-    <input type="password" id="inputPasswordRepeat" class="form-control" placeholder="Repeat Password" required>
-    <div class="checkbox mb-3">
-        <label>
-            <p>Have an account? <a href="/login.html">Log in</a></p>
-        </label>
-    </div>
+  <h1 class="h3 mb-3 font-weight-normal">PC Configurator</h1>
+  <h2 class="h3 mb-3 font-weight-normal">Registration</h2>
+  <label for="inputMail" class="sr-only">E-mail</label>
+  <input type="text" id="inputMail" class="form-control" placeholder="E-mail" required autofocus>
+  <label for="inputName" class="sr-only">Username</label>
+  <input type="text" id="inputName" class="form-control" placeholder="Username" required>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+  <label for="inputPasswordRepeat" class="sr-only">Password</label>
+  <input type="password" id="inputPasswordRepeat" class="form-control" placeholder="Repeat Password" required>
+  <div class="checkbox mb-3">
+    <label>
+      <p>Have an account? <a href="/login.html">Log in</a></p>
+    </label>
+  </div>
 
-    <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">Register</button>
+  <button class="btn btn-lg btn-primary btn-block" id="register" type="submit">Register</button>
 </form>
 
 </body>

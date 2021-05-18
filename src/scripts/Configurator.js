@@ -1,24 +1,24 @@
 const Request = require('./Request');
 
 class Configurator extends Request {
-    constructor() {
-        super();
-        if (document.getElementById('accordionExample')) {
-            this.init();
-        }
+  constructor() {
+    super();
+    if (document.getElementById('accordionExample')) {
+      this.init();
     }
+  }
 
-    async init() {
+  async init() {
+    await this.loadSelectedComponents();
+  }
 
-    }
+  async loadSelectedComponents() {
 
-    loadSelectedComponents() {
+  }
 
-    }
+  remove() {
 
-    remove() {
-
-    }
+  }
 
 }
 

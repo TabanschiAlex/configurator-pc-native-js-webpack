@@ -10,7 +10,7 @@ class Request {
       }
 
       if (token) {
-        options.headers['Authorization'] = token;
+        options.headers['Authorization'] = 'Bearer ' + token;
       }
 
       if (Object.keys(body).length) {
@@ -31,6 +31,11 @@ class Request {
   async getComponents(request) {
     const response = await this.request(request, 'GET');
     this.components = await response.json();
+  }
+
+  async getConfigList() {
+    const response = await this.request('http://localhost/configurator', 'GET');
+    this.configList = await response.json();
   }
 
   async authRequest(request, data) {

@@ -3,6 +3,11 @@ const Request = require('./Request');
 class Auth extends Request {
   constructor() {
     super();
+    this.setUserHeader();
+    this.setEvents();
+  }
+
+  setUserHeader() {
     this.navAccount = document.getElementById('nav-account');
 
     if (localStorage.getItem('isLogIn') === 'true' && this.navAccount) {
@@ -22,7 +27,9 @@ class Auth extends Request {
                     <a class="nav-link" href="register.html">Register</a>
                 </li>`
     }
+  }
 
+  setEvents() {
     this.registration = document.getElementById('register') || false;
     this.loginElem = document.getElementById('login') || false;
     this.logoutElem = document.getElementById('logout') || false;
@@ -74,7 +81,7 @@ class Auth extends Request {
         return false;
       }
 
-      const data = {email, password};
+      const data = {name, email, password};
       await this.authRequest('http://localhost/auth/register', data);
 
       return true;

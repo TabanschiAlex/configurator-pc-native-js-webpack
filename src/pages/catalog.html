@@ -34,8 +34,26 @@
 
 <div class="container d-flex justify-content-center mt-50 mb-50">
     <div class="row justify-content-center">
+        <div class="input-group mb-3 w-75">
+        <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">Category</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+            <option value="cpu" selected>CPU</option>
+            <option value="motherboard">Motherboard</option>
+            <option value="gpu">GPU</option>
+            <option value="ram">RAM</option>
+            <option value="rom">ROM</option>
+            <option value="psu">PSU</option>
+            <option value="case">Case</option>
+            <option value="monitor">Monitor</option>
+            <option value="keyboard">Keyboard</option>
+            <option value="mouse">Mouse</option>
+        </select>
+        </div>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-secondary active">
+
+            <!--<label class="btn btn-secondary active">
                 <input type="radio" name="options" id="option1" value="cpu" checked>
                 Cpu
             </label>
@@ -74,7 +92,7 @@
             <label class="btn btn-secondary">
                 <input type="radio" name="options" value="mouse">
                 Mouse
-            </label>
+            </label>-->
         </div>
 
         <div class="col-md-10" id="products"> </div>
